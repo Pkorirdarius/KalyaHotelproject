@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('.nav-toggle');
 const closeBtn = document.querySelector('.nav-close');
 const navigation = document.querySelector('.nav-menu');
 const slides = document.querySelectorAll('.video-slide');
+const contents = document.querySelectorAll('.home')
 
 menuBtn.addEventListener('click',()=>{
     menuBtn.classList.toggle("active");
@@ -21,9 +22,14 @@ let sliderNav = manual => {
     slides.forEach((slide) =>{
         slide.classList.remove("active");
     })
+
+    contents.forEach((content) =>{
+        content.classList.remove("active");
+    })
     
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
+    contents[manual].classList.add("active")
 };
 
 btns.forEach((btn,i ) => {
