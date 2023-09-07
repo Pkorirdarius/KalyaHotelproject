@@ -218,6 +218,7 @@ color: #ffffff;
 
 
 /* Media icons */
+/* Medium screens */
 @media (max-width:1040px) {
     .nav{
         padding: 15px 20px;
