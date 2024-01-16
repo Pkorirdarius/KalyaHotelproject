@@ -37,3 +37,6 @@ btns.forEach((btn,i ) => {
         sliderNav(i)
     })
 });
+window.onload = function() {
+    document.getElementById('logged-out-view').src = 'index.html'
+}

@@ -58,37 +58,37 @@
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >A World <span>To discover</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="./authentication.html" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="home" data-aos="zoom-in-up"data-aos-easing="linear" 
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >Discover <span>many delicacies</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="#" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="home" data-aos="zoom-in-up"data-aos-easing="linear" 
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >Free your <span>mind in nature</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="#" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="home" data-aos="zoom-in-up"data-aos-easing="linear" 
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >Leisure<span>at it's finest</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="#" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="home" data-aos="zoom-in-up"data-aos-easing="linear" 
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >State of the <span>art Reception</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="#" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="home" data-aos="zoom-in-up"data-aos-easing="linear" 
         data-aos-offset="400" data-aos-delay="3000">
             <h1 >comfy place<span>to relax and enjoy</span></h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium quasi aliquid! Modi ab atque, ex tenetur quas nam! Numquam voluptate quam possimus neque excepturi magnam, accusantium sed incidunt repellat?</p>
-            <a href="#">Book Now</a>
+            <a href="#" id="sign-in-reveal">Book Now</a>
         </div>
         <div class="media-icons">
             <a href="#">
@@ -111,6 +111,38 @@
             <div class="nav-btn"></div>
         </div>
     </section>
+     <section id="logged-out-view">
+        <div class="container">
+            <h1 class="app-title">Moody</h1>
+            
+            <div class="provider-buttons">
+                <button id="sign-in-with-google-btn" class="provider-btn">
+                    <img src="assets/providers/google.png" class="google-btn-logo">
+                    Sign in with Google
+                </button>
+            </div>
+            
+            <div class="auth-fields-and-buttons">
+                <input id="email-input" type="email" placeholder="Email">
+                <input id="password-input" type="password" placeholder="Password">
+                
+                <button id="sign-in-btn" class="primary-btn">Sign in</button>
+                <button id="create-account-btn" class="secondary-btn">Create Account</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="logged-in-view">
+        <div class="container">
+            <nav>
+                <button id="sign-out-btn" class="icon-btn">
+                    <img src="assets/icons/icon-sign-out.svg" class="icon-img-btn">
+                </button>
+            </nav>
+            
+            <img src="assets/gifs/jerryandthebird.gif">
+        </div>
+    </section>
     <!--- End of main site section --->
         <!-- Aos Animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -119,5 +151,7 @@
     </script>
     <!-- custom js styling -->
     <script src="../js/main.js"></script>
+    <!-- Firebase Data retrieval -->
+    <script src="../js/firebase.js"></script>
 </body>
 </html>
